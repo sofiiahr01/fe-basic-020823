@@ -3,3 +3,43 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+h3 {
+  color: red;
+}
+.description {
+  color: orange;
+}
+#someId {
+  color: yellow;
+}
+.item {
+  color: green;
+}
+.item.item2 {
+  color: aquamarine;
+}
+p b {
+  color: aqua;
+}
+p > a {
+  color: brown;
+}
+b + span {
+  color: blue;
+}
+h4 ~ p {
+  color: violet;
+}
+[target] {
+  color: blueviolet;
+}
+[target="_self"] {
+  color: palevioletred;
+}
+nav > a {
+  text-decoration: underline;
+}
