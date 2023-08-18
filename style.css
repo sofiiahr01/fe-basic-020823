@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+main {
+  width: 910px;
+  margin: auto;
+}
 .card {
   display: inline-block;
   background: lightgrey;
@@ -23,5 +27,6 @@ p {
   height: 36px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 18px;
 }
