@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+.card {
+  display: inline-block;
+  background: lightgrey;
+  width: 200px;
+  height: 226px;
+  margin: 50px;
+  text-align: center;
+}
+h3 {
+  width: 200px;
+  height: 22px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 10px;
+}
+p {
+  width: 200px;
+  height: 36px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 10px;
+}
