@@ -15,16 +15,12 @@ main {
   margin: 50px;
   text-align: center;
 }
-h3 {
-  width: 200px;
-  height: 22px;
+.title {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   padding-top: 10px;
 }
-p {
-  width: 200px;
-  height: 36px;
+.description {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   padding-top: 20px;
