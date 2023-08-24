@@ -7,14 +7,17 @@
 img {
   display: block;
   max-width: 100%;
+  margin: auto;
+  border-radius: 0.5rem;
 }
 
 html {
-  font-family: "Rbobto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Pacifico", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
   font-weight: 400;
-  color: #353535;
+  color: #909090;
+  text-align: center;
 }
 
 .container {
@@ -25,4 +28,40 @@ html {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+}
+
+.card {
+  width: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(50, 50, 100, 0.25);
+  padding: 1rem;
+  margin: auto;
+}
+
+.title {
+  font-weight: 700;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-weight: 700;
+  color: #303030;
+}
+
+.description {
+  padding-bottom: 0.5rem;
+}
+
+.underline {
+  color: #909090;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.details {
+  text-align: right;
+  padding-top: 0.5rem;
 }
