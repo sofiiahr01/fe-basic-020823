@@ -26,3 +26,33 @@ html {
   padding-right: 1rem;
   position: relative;
 }
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.calendar {
+  margin: auto;
+}
+
+.cptn {
+  font-weight: 700;
+}
+
+table,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+td,
+th {
+  padding: 0.25rem 0.5rem;
+  border: 0;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
