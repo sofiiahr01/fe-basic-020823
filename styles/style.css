@@ -1,3 +1,7 @@
+:root {
+  --basic-color: #153416;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +11,13 @@
 img {
   display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 html {
-  font-family: "Rbobto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -25,4 +32,201 @@ html {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.body {
+  background: #ccc url(../images/david-marcu-78A265wPiO4-unsplash\ 1.jpg)
+    no-repeat center/cover;
+  height: 100vh;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  max-width: 500px;
+  line-height: 100vh;
+  margin-left: auto;
+}
+
+.bg {
+  height: 100vh;
+  background-color: rgba(22, 21, 21, 0.5);
+}
+
+.form {
+  max-width: calc(340px + 2rem);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-wrap {
+  border-radius: 30px;
+  border: 1px solid #153416;
+  max-width: 340px;
+  width: 100%;
+  margin-bottom: 75px;
+  padding: 2px;
+}
+
+.sign-in-main {
+  display: inline-block;
+  width: 168px;
+  height: 32px;
+  border-radius: 30px;
+  border: none;
+  background: #153416;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sign-up-main {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  background: none;
+  border: none;
+  width: 162px;
+  height: 32px;
+}
+
+.sign-up-reg {
+  width: 168px;
+  height: 32px;
+  border-radius: 30px;
+  border: none;
+  background: #153416;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.sign-in-reg {
+  width: 166px;
+  height: 32px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  background: none;
+  border: none;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.input {
+  width: 340px;
+  height: 44px;
+  border-radius: 30px;
+  background: #929191;
+  border: 0;
+  padding-left: 20px;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.input.email {
+  margin-top: 30px;
+}
+
+.input.password {
+  margin-top: 15px;
+}
+
+.password-link {
+  margin-top: 20px;
+  display: block;
+  float: right;
+  color: #153416;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.label {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+
+#checkbox {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  vertical-align: middle;
+}
+
+#checkbox:checked + .checkbox {
+  background: #153416 url(../images/checkmark.png) no-repeat center/cover;
+  border: #153416;
+}
+
+.check {
+  margin-left: 5px;
+}
+
+.sign-in {
+  width: 340px;
+  height: 44px;
+  border: none;
+  border-radius: 30px;
+  background: #153416;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.acc-link {
+  margin-top: 40px;
+  margin-left: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.acc {
+  color: #153416;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.acc + .acc {
+  margin-top: 30px;
 }

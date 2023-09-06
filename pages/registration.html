@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body class="body">
+    <header></header>
+    <main class="bg">
+      <div class="main">
+        <section class="form">
+          <div class="container">
+            <div class="form">
+              <div class="slider-wrap">
+                <button type="button" class="sign-in-reg">Вхід</button>
+                <button type="button" class="sign-up-reg">Реєстрація</button>
+                <div class="clearfix"></div>
+              </div>
+              <h1 class="title">Реєстрація</h1>
+              <form action="https://fom.in.ua/echo" method="post" class="form">
+                <input
+                  type="email"
+                  name="email"
+                  class="input email"
+                  placeholder="Введіть E-mail"
+                  required
+                  title="Введіть E-mail"
+                />
+                <br />
+                <input
+                  type="password"
+                  name="password"
+                  class="input password"
+                  placeholder="Пароль"
+                  required
+                  title="Введіть пароль"
+                />
+                <input
+                  type="password"
+                  name="password"
+                  class="input password"
+                  placeholder="Повторити пароль"
+                  required
+                  title="Введіть пароль"
+                />
+                <br />
+                <label class="label">
+                  <input type="checkbox" id="checkbox" />
+                  <span class="checkbox"></span>
+                  <span class="check">Отримувати новини</span>
+                </label>
+                <br />
+                <button type="submit" class="sign-in">Зареєструватись</button>
+              </form>
+              <p class="acc">
+                Вже є акаунт?
+                <a href="../pages/index.html" class="acc-link"
+                  >Авторизуватись</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

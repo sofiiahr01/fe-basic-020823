@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вхід</title>
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body class="body">
+    <header></header>
+    <main class="bg">
+      <div class="main">
+        <section class="form">
+          <div class="container">
+            <div class="form">
+              <div class="slider-wrap">
+                <button type="button" class="sign-in-main">Вхід</button>
+                <button type="button" class="sign-up-main">Реєстрація</button>
+              </div>
+              <h1 class="title">Вхід</h1>
+              <form action="https://fom.in.ua/echo" method="post" class="form">
+                <input
+                  type="email"
+                  name="email"
+                  class="input email"
+                  placeholder="Введіть E-mail"
+                  required
+                  title="Введіть E-mail"
+                />
+                <br />
+                <input
+                  type="password"
+                  name="password"
+                  class="input password"
+                  placeholder="Пароль"
+                  required
+                  title="Введіть пароль"
+                />
+                <br />
+                <label class="label">
+                  <input type="checkbox" id="checkbox" />
+                  <span class="checkbox"></span>
+                  <span class="check">Запам'ятати мене</span>
+                </label>
+                <a href="#" class="password-link">Забули пароль?</a>
+                <br />
+                <button type="submit" class="sign-in">Вхід</button>
+              </form>
+              <p class="acc">
+                Ще не маєте акаунта?
+                <a href="../pages/registration.html" class="acc-link"
+                  >Зареєструватись</a
+                >
+              </p>
+              <p class="acc">Або увійдіть через</p>
+              <a href="#"><img src="../images/social.png" alt="social" /></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
