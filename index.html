@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson template</title>
+    <title>Multi-level menu</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -12,18 +12,39 @@
     <main>
       <section>
         <div class="container">
-          <h1>Lesson template</h1>
-          <img
-            src="./images/bubble_bw_cat.jpg"
-            alt="bubble_bw_cat"
-            width="500"
-          />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            cum repudiandae iure voluptatem, velit laborum veniam atque hic ipsa
-            eligendi repellendus. At veritatis reprehenderit obcaecati alias
-            nostrum eos tempore molestias!
-          </p>
+          <nav>
+            <ul>
+              <li class="category">Home</li>
+              <li class="category">
+                Products
+                <ul class="menu">
+                  <li class="product">
+                    Product 1
+                    <ul class="menu">
+                      <li class="product">Sub Item</li>
+                      <li class="product">Sub Item</li>
+                    </ul>
+                  </li>
+                  <li class="product">
+                    Product 2
+                    <ul class="menu">
+                      <li class="product">Sub Item</li>
+                      <li class="product">
+                        Sub Item
+                        <ul class="menu">
+                          <li class="product">Item</li>
+                          <li class="product">Item</li>
+                          <li class="product">Item</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="category">About</li>
+              <li class="category">Contact</li>
+            </ul>
+          </nav>
         </div>
       </section>
     </main>

@@ -1,3 +1,7 @@
+:root {
+  --basic-color: #ff9c7d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +13,13 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 html {
-  font-family: "Rbobto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -25,4 +34,57 @@ html {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+}
+
+.category {
+  color: #fff;
+  background: #353535;
+  border-bottom: #ff9c7d 5px solid;
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.5;
+  max-width: 150px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.product {
+  text-transform: none;
+  display: none;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  width: 150px;
+  border-bottom: #ca6f54 2px solid;
+  position: relative;
+}
+
+.product > .menu {
+  display: none;
+}
+
+.category:hover {
+  background-color: #ff9c7d;
+}
+
+.product:hover {
+  background-color: #ffbaa5;
+}
+
+.category:hover .product {
+  display: block;
+}
+
+.product:hover > .menu {
+  background-color: #ff9c7d;
+  display: block;
+  left: 100%;
+  float: left;
+  position: absolute;
+  z-index: 5;
+  top: -0.5px;
 }
