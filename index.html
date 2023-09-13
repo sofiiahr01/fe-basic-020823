@@ -1,33 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson template</title>
+    <title>Amelia Flowers</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container">
+        <nav class="nav-wrap">
+          <div class="logo">Amelia F</div>
+          <a href="#" class="nav-link">Головна</a
+          ><a href="#" class="nav-link">Про нас</a
+          ><a href="#" class="nav-link">Як ми працюємо</a
+          ><a href="#" class="nav-link">Наші роботи</a
+          ><a href="#" class="nav-link">Контакти</a>
+        </nav>
+      </div>
+    </header>
     <main>
-      <section>
+      <section class="first-section">
         <div class="container">
-          <h1>Lesson template</h1>
-          <img
-            src="./images/bubble_bw_cat.jpg"
-            alt="bubble_bw_cat"
-            width="500"
-          />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            cum repudiandae iure voluptatem, velit laborum veniam atque hic ipsa
-            eligendi repellendus. At veritatis reprehenderit obcaecati alias
-            nostrum eos tempore molestias!
+          <div class="first-wrap">
+            <div>
+              <h1 class="main-title">Amelia Flowers</h1>
+              <p class="descr">
+                Lorem Ipsum - це текст-"риба", що часто використовується в пресі
+                та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
+                латиниці з початку XVI ст.
+              </p>
+              <div class="btns">
+                <div class="btn green"><a href="#">Замовити букет</a></div>
+                <div class="btn light"><a href="#">Допомога флориста</a></div>
+              </div>
+            </div>
+            <img
+              src="./images/white-flowers.jpg"
+              alt="white-flowers"
+              class="main-img"
+              width="540"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h3 class="second-title">Про нас</h3>
+          <p class="about-descr">
+            Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
+            веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
+            латиниці з початку XVI ст.
           </p>
         </div>
       </section>
+      <section class="cards">
+        <div class="container cards1">
+          <article class="card">
+            <img
+              src="./images/price.png"
+              alt="price"
+              width="80"
+              class="card-img"
+            />
+            <p class="card-descr">Найкраші ціни</p>
+          </article>
+          <article class="card">
+            <img
+              src="./images/board.png"
+              alt="board"
+              width="80"
+              class="card-img"
+            />
+            <p class="card-descr">Індивідуальний підбір</p>
+          </article>
+          <article class="card">
+            <img
+              src="./images/hand.png"
+              alt="hand"
+              width="80"
+              class="card-img"
+            />
+            <p class="card-descr">Швидка доставка</p>
+          </article>
+          <article class="card">
+            <img
+              src="./images/drop.png"
+              alt="drop"
+              width="80"
+              class="card-img"
+            />
+            <p class="card-descr">Завжди свіжі квіти</p>
+          </article>
+          <article class="card">
+            <img
+              src="./images/money.png"
+              alt="money"
+              width="80"
+              class="card-img"
+            />
+            <p class="card-descr">Бонусна система</p>
+          </article>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container">
+          <div class="work-wrap">
+            <img
+              src="./images/glass-vase-with-flowers.jpg"
+              alt="glass-vase-with-flowers"
+            />
+            <div>
+              <h3 class="second-title">Як ми працюємо</h3>
+              <p class="descr">
+                Lorem Ipsum - це текст-"риба", що часто використовується в пресі
+                та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
+                латиниці з початку XVI ст.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works-cards">
+        <div class="container">
+          <h3 class="second-title">Наші роботи</h3>
+          <div class="cards1">
+            <article class="work-card">
+              <img src="./images/pink-flowers.jpg" alt="pink-flowers" />
+              <h4 class="card-title">Букет "Флоренція"</h4>
+            </article>
+            <article class="work-card">
+              <img
+                src="./images/multicolor-flowers.jpg"
+                alt="multicolor-flowers"
+              />
+              <h4 class="card-title">Букет "Флоренція"</h4>
+            </article>
+            <article class="work-card">
+              <img
+                src="./images/pink-white-flowers.jpg"
+                alt="pink-white-flowers"
+              />
+              <h4 class="card-title">Букет "Флоренція"</h4>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="contacts">
+            <h4 class="footer-title">Контакти</h4>
+            <ul class="contact-list">
+              <li class="contact">+380517328964</li>
+              <li class="contact">+380517328964</li>
+              <li class="contact">Харків, вул. Сумська, 115</li>
+            </ul>
+          </div>
+          <div class="logo">Amelia F</div>
+          <div class="socials">
+            <h4 class="footer-title">Ми у соц. мережах</h4>
+            <a href="#" class="socials-link"
+              ><img src="./images/socials.png" alt="socials" width="110"
+            /></a>
+          </div>
+        </div>
+        <div class="year">© 2023</div>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
