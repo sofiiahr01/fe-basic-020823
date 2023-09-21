@@ -459,6 +459,11 @@ html {
   margin-top: 96px;
 }
 
+.width {
+  max-width: 400px;
+  width: 100%;
+}
+
 .portfolio-img {
   display: flex;
 }
