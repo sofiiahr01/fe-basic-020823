@@ -562,6 +562,9 @@ html {
 
 .articles {
   background-color: #f2f1ef;
+  background-image: url(../images/half-red-sun.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 225px;
   padding-top: 91px;
   display: flex;
   align-items: flex-end;
@@ -583,6 +586,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #f2f1ef;
   border: 2px solid #000;
   margin-bottom: 100px;
   padding-right: 32px;
@@ -637,12 +641,6 @@ html {
   background-color: #161513;
   color: #fff;
   text-align: center;
-}
-
-.half-red-sun {
-  display: flex;
-  align-self: flex-end;
-  margin-bottom: 84px;
 }
 
 .email {
