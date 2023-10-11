@@ -169,6 +169,10 @@ body {
   font-weight: 700;
   border-bottom: 2px solid transparent;
 }
+.current {
+  color: #f0145a;
+  border-bottom: 2px solid #f0145a;
+}
 
 .nav-link:hover {
   transition: all 0.1s linear;
@@ -541,11 +545,6 @@ body {
   margin-left: 15px;
 }
 
-.current {
-  color: #f0145a;
-  border-bottom: 2px solid #f0145a;
-}
-
 .form-btn:focus {
   color: transparent;
   background-color: #ededf7;
@@ -624,11 +623,6 @@ body {
 }
 
 @media (max-width: 1440px) {
-  .contacts-sect {
-    max-width: 1080px;
-    width: 100%;
-  }
-
   .card .team-photo {
     aspect-ratio: 1/1;
   }
@@ -708,6 +702,11 @@ body {
     padding-right: 30px;
     padding-left: 30px;
   }
+
+  .sect-cont {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -780,6 +779,17 @@ body {
 
 @media (max-width: 690px) {
   .contacts-sect {
+    flex-direction: column;
+    gap: 60px;
+    max-width: 648px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .sect-cont {
     flex-direction: column;
     gap: 60px;
     max-width: 648px;
