@@ -28,6 +28,12 @@ html {
   color: #353535;
 }
 
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .container {
   width: 100%;
   max-width: calc(1600px + 2rem);
@@ -537,6 +543,7 @@ html {
 
 .current {
   color: #f0145a;
+  border-bottom: 2px solid #f0145a;
 }
 
 .form-btn:focus {
@@ -565,6 +572,25 @@ html {
   .card .team-photo {
     aspect-ratio: 5/4;
     min-width: 490px;
+  }
+  .contacts-sect {
+    margin-right: auto;
+    margin-left: auto;
+
+    max-width: 1360px;
+    width: 100%;
+  }
+
+  .form-cont {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .contacts-cont {
+    max-width: 650px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -624,6 +650,14 @@ html {
   }
 }
 
+@media (max-width: 1200px) {
+  .contacts-sect {
+    max-width: 904px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .card .team-photo {
     aspect-ratio: 2/3;
@@ -658,10 +692,28 @@ html {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 930px) {
+  .contacts-sect {
+    max-width: 770px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .header-cont {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .footer-cont {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 790px) {
+  .header-cont {
+    padding-right: 30px;
+    padding-left: 30px;
     align-items: flex-start;
     flex-direction: column;
   }
@@ -706,8 +758,8 @@ html {
     gap: 60px;
     max-width: 648px;
     width: 100%;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form-cont {
@@ -724,22 +776,28 @@ html {
     max-width: 588px;
     width: 100%;
   }
+}
+
+@media (max-width: 690px) {
   .contacts-sect {
     flex-direction: column;
+    gap: 60px;
     max-width: 648px;
     width: 100%;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 592px) {
   .team-sect {
     margin-top: 30px;
   }
 
   .sect-cont {
-    max-width: 375px;
+    max-width: 592px;
     width: 100%;
     padding-right: 30px;
     padding-left: 30px;
@@ -789,7 +847,9 @@ html {
     inset: 0;
     width: 100%;
     height: 100%;
-    padding: 0 12px 0 12px;
+    padding-top: 50px;
+    padding-right: 12px;
+    padding-left: 12px;
     z-index: -5;
   }
 
@@ -809,11 +869,11 @@ html {
     transform: translateY(100vh);
     height: 100%;
     width: 100%;
-    margin-top: 100%;
   }
 
   .header-nav.active .menu {
     transform: translateY(0);
+    margin-top: auto;
   }
 
   .menu {
@@ -871,22 +931,26 @@ html {
   }
 
   .nav-cont {
+    max-width: 592px;
+    width: 100%;
     padding: 10px 15px;
     background: #f5f5fa;
   }
   .header-contacts {
-    max-width: 375px;
+    max-width: 592px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
   }
 
   .adaptive-cont {
-    max-width: 412px;
+    max-width: 592px;
     width: 100%;
     position: relative;
     padding-top: 0;
     padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .logo-cont {
@@ -908,25 +972,226 @@ html {
 
   .burger {
     display: flex;
-    position: relative;
-    z-index: 7;
-  }
-
-  .burger.active {
-    z-index: -1;
   }
 
   .contacts-sect {
     flex-direction: column;
     gap: 30px;
-    max-width: 360px;
+    max-width: 420px;
     width: 100%;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .menu-link + .menu-link {
     margin-left: 0;
+  }
+
+  .menu-link:last-child {
+    margin-bottom: 0;
+  }
+
+  .current {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .team-sect {
+    margin-top: 30px;
+  }
+
+  .sect-cont {
+    max-width: 375px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .descr {
+    font-size: 30px;
+  }
+
+  .team-cards {
+    grid-template-columns: 100%;
+  }
+
+  .card .team-photo {
+    aspect-ratio: 1/1;
+  }
+
+  .footer-cont {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .foot-location {
+    flex-direction: column;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .copyright {
+    padding-top: 30px;
+  }
+
+  .header-cont {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .header-nav {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    z-index: -5;
+  }
+
+  .header-nav.active {
+    display: block;
+    z-index: 5;
+    background-color: rgba(50, 50, 100, 0.85);
+  }
+
+  .header-nav .menu {
+    list-style: none;
+    font-size: 2rem;
+    background-color: #fff;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    transition: all 0.3s linear;
+    transform: translateY(100vh);
+    height: 100%;
+    width: 100%;
+  }
+
+  .header-nav.active .menu {
+    transform: translateY(0);
+  }
+
+  .menu {
+    flex-direction: column;
+
+    padding: 12px;
+  }
+
+  .menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 43px;
+    background-color: #f5f5fa;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    border-radius: 12px;
+  }
+
+  .nav-link:active {
+    border-bottom: none;
+    color: #f0145a;
+    transition: none;
+  }
+
+  .nav-link:hover {
+    border-bottom: none;
+    transition: none;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .menu-link:active {
+    background-color: #e6e6f0;
+  }
+
+  .nav-link {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0;
+  }
+
+  .close {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-cont .location {
+    display: none;
+  }
+
+  .nav-cont .social-link {
+    display: none;
+  }
+
+  .nav-cont {
+    padding: 10px 15px;
+    background: #f5f5fa;
+  }
+  .header-contacts {
+    max-width: 375px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .adaptive-cont {
+    max-width: 412px;
+    width: 100%;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .logo-cont {
+    max-width: 142px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .logo-span {
+    font-size: 20px;
+  }
+
+  .team-span svg {
+    max-width: 10px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .contacts-sect {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 315px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu-link + .menu-link {
+    margin-left: 0;
+  }
+  .menu-link:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -987,7 +1252,8 @@ html {
     width: 100%;
     height: 100%;
     z-index: -5;
-    padding: 0 12px 0 12px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 
   .header-nav.active {
@@ -1078,11 +1344,13 @@ html {
   }
 
   .adaptive-cont {
-    max-width: 375px;
+    max-width: 374px;
     width: 100%;
     position: relative;
     padding-top: 0;
     padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .logo-cont {
@@ -1106,19 +1374,34 @@ html {
     display: flex;
   }
 
-  .burger.active {
-    z-index: -1;
-  }
-
   .contacts-sect {
     flex-direction: column;
+    gap: 30px;
     max-width: 315px;
     width: 100%;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .menu-link + .menu-link {
     margin-left: 0;
+  }
+  .menu-link:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 335px) {
+  .contacts-sect {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .copyright {
+    text-align: center;
   }
 }
