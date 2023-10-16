@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <link rel="stylesheet" href="../assets/slick/slick.css" />
+    <link rel="stylesheet" href="../assets/slick/slick-theme.css" />
     <link rel="stylesheet" href="../fonts/fonts.css" />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="homepage-header">
+    <div class="wrapper homepage-header">
+      <header class="header img-wrap">
         <div class="container header-cont">
-          <div class="container adaptive-cont">
+          <div class="container adaptive-cont dark-adaptive">
             <div class="logo-cont">
               <a href="./homepage.html" class="name"
                 ><img src="../images/dark-logo.png" alt="dark-logo" width="130"
               /></a>
             </div>
-
-            <span class="burger"
+            <span class="burger dark-burger"
               ><svg
                 width="32"
                 height="32"
@@ -49,7 +50,7 @@
                 </g></svg
             ></span>
           </div>
-          <div class="nav-cont">
+          <div class="nav-cont dark-nav">
             <div class="header-contacts">
               <div class="lang-links">
                 <a href="#" class="lang-link dark-header">УК</a
@@ -60,7 +61,7 @@
               <p class="location dark-header">Kyiv, Mechnikova str, 14/1</p>
               <span class="dot dark-header"></span>
               <a href="tel:0800211927" class="tel dark-header">0800 211 927</a>
-              <span class="dot"></span>
+              <span class="dot dark-header"></span>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
@@ -118,48 +119,53 @@
                   <a href="#" class="nav-link dark-header">publications</a>
                 </li>
                 <li class="menu-link">
-                  <a href="#" class="nav-link dark-header">contact</a>
+                  <a href="./contacts.html" class="nav-link dark-header"
+                    >contact</a
+                  >
                 </li>
               </ul>
             </nav>
           </div>
         </div>
-        <div class="header-section">
-          <p class="header-text">you legal solutions provider</p>
-        </div>
-        <div class="scroll-btn">
-          <svg
-            width="42"
-            height="42"
-            viewBox="0 0 42 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Scroll" clip-path="url(#clip0_22728_11339)">
-              <circle
-                id="Ellipse"
-                opacity="0.5"
-                cx="21"
-                cy="21"
-                r="20"
-                stroke="white"
-                stroke-width="2"
-              />
-              <path
-                id="Vector"
-                d="M12 18L21 27L30 18"
-                stroke="white"
-                stroke-width="2"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_22728_11339">
-                <rect width="42" height="42" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-      </div>
+        <section class="header-section">
+          <div class="container">
+            <h1 class="header-text">you legal solutions provider</h1>
+          </div>
+          <a href="#" class="scroll-btn">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Scroll" clip-path="url(#clip0_22728_11339)">
+                <circle
+                  id="Ellipse"
+                  opacity="0.5"
+                  cx="21"
+                  cy="21"
+                  r="20"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <path
+                  id="Vector"
+                  d="M12 18L21 27L30 18"
+                  stroke="white"
+                  stroke-width="2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_22728_11339">
+                  <rect width="42" height="42" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </section>
+      </header>
+
       <section class="benefits">
         <div class="container benefits-cont">
           <div class="benefits-list">
@@ -686,15 +692,158 @@
           </div>
         </div>
       </section>
-    </header>
+    </div>
     <main>
       <section class="card-comments">
-        <article class="card-comment"></article>
-        <article class="card-comment"></article>
-        <article class="card-comment"></article>
+        <div class="slider-wrap container">
+          <div class="slide">
+            <article class="card-comment">
+              <img
+                src="../images/Alexander.jpg"
+                alt="Alexander"
+                class="slider-card-img"
+                width="400"
+              />
+              <div class="slider-card-descr">
+                <a href="./index.html" class="sect-link" target="_blank"
+                  >команда
+                  <span class="span-btn"
+                    ><svg
+                      width="33"
+                      height="32"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="More13">
+                        <circle
+                          id="Ellipse0113"
+                          cx="16.3333"
+                          cy="16"
+                          r="16"
+                          fill="#F5F5FA"
+                        />
+                        <path
+                          id="Vector0313"
+                          d="M13.8333 23.5L20.8333 16.5L13.8333 9.5"
+                          stroke="#24A3FF"
+                          stroke-width="2"
+                        />
+                      </g></svg
+                  ></span>
+                </a>
+                <h2 class="section-title">
+                  Ми звикли брати на себе відповідальність та завжди гарантуємо
+                  чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                  безсилі.
+                </h2>
+                <div class="position-wrap">
+                  <h4 class="name">Олександр Олександровський</h4>
+                  <p class="position">Керуючий партнер</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slide">
+            <article class="card-comment">
+              <img
+                src="../images/Vladislav.jpg"
+                alt="Vladislav"
+                class="slider-card-img"
+                width="400"
+              />
+              <div class="slider-card-descr">
+                <a href="./index.html" class="sect-link" target="_blank"
+                  >команда
+                  <span class="span-btn"
+                    ><svg
+                      width="33"
+                      height="32"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="More134">
+                        <circle
+                          id="Ellipse01134"
+                          cx="16.3333"
+                          cy="16"
+                          r="16"
+                          fill="#F5F5FA"
+                        />
+                        <path
+                          id="Vector03134"
+                          d="M13.8333 23.5L20.8333 16.5L13.8333 9.5"
+                          stroke="#24A3FF"
+                          stroke-width="2"
+                        />
+                      </g></svg
+                  ></span>
+                </a>
+                <h2 class="section-title">
+                  Ми звикли брати на себе відповідальність та завжди гарантуємо
+                  чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                  безсилі.
+                </h2>
+                <div class="position-wrap">
+                  <h4 class="name">Владіслав Мєльнік</h4>
+                  <p class="position">Юрист</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slide">
+            <article class="card-comment">
+              <img
+                src="../images/Oksana.jpg"
+                alt="Oksana"
+                class="slider-card-img"
+                width="400"
+              />
+              <div class="slider-card-descr">
+                <a href="./index.html" class="sect-link" target="_blank"
+                  >команда
+                  <span class="span-btn"
+                    ><svg
+                      width="33"
+                      height="32"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="More123">
+                        <circle
+                          id="Ellipse01123"
+                          cx="16.3333"
+                          cy="16"
+                          r="16"
+                          fill="#F5F5FA"
+                        />
+                        <path
+                          id="Vector03123"
+                          d="M13.8333 23.5L20.8333 16.5L13.8333 9.5"
+                          stroke="#24A3FF"
+                          stroke-width="2"
+                        />
+                      </g></svg
+                  ></span>
+                </a>
+                <h2 class="section-title">
+                  Ми звикли брати на себе відповідальність та завжди гарантуємо
+                  чесну, вчасну допомогу, навіть у ситуаціях, коли більшість
+                  безсилі.
+                </h2>
+                <div class="position-wrap">
+                  <h4 class="name">Оксана Кобзар</h4>
+                  <p class="position-card">Пайовий партнер, адвокат</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
       <section class="trust">
-        <div class="container">
+        <div class="container trust-cont">
           <h5 class="trust-title">They already trust us</h5>
           <div class="logo-cards">
             <div class="logo-card" style="background: #1c4280">
@@ -752,7 +901,7 @@
         </div>
       </section>
       <section class="publications">
-        <div class="container">
+        <div class="container publ-cont">
           <a href="#" class="sect-link"
             >Publications
             <span class="span-btn"
@@ -782,7 +931,11 @@
           <h2 class="section-title">We have something to tell</h2>
           <div class="publication-cards">
             <article class="publication-card">
-              <img src="../images/Work.jpg" alt="Work" />
+              <img
+                src="../images/Work.jpg"
+                alt="Work"
+                class="public-card-img"
+              />
               <div class="publ-card-text">
                 <h4 class="publication-title">Equity associate</h4>
                 <span class="publication-date">April 22</span>
@@ -793,7 +946,11 @@
               </div>
             </article>
             <article class="publication-card">
-              <img src="../images/GDPR.jpg" alt="GDPR" />
+              <img
+                src="../images/GDPR.jpg"
+                alt="GDPR"
+                class="public-card-img"
+              />
               <div class="publ-card-text">
                 <h4 class="publication-title">
                   Penalty for the Good Corporation: what will happen to Google
@@ -807,8 +964,12 @@
                 </p>
               </div>
             </article>
-            <article class="publication-card">
-              <img src="../images/Team.jpg" alt="Team" />
+            <article class="publication-card stretch">
+              <img
+                src="../images/Team.jpg"
+                alt="Team"
+                class="public-card-img"
+              />
               <div class="publ-card-text">
                 <h4 class="publication-title">Millennial Testament</h4>
                 <span class="publication-date">August 19</span>
@@ -873,6 +1034,7 @@
       </div>
     </footer>
     <script src="../assets/jquery/code.jquery.com_jquery-3.7.1.js"></script>
+    <script src="../assets/slick/slick.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>
