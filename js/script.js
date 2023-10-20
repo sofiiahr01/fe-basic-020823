@@ -9,6 +9,15 @@ $(".close").click(function () {
   $(".header-nav").toggleClass("active");
 });
 
+$(document).ready(function scrollToElem(elem) {
+  event.preventDefault();
+  const target = document.querySelector(elem.hash);
+  window.scrollTo({
+    top: target.offsetTop,
+    behavior: "smooth",
+  });
+});
+
 $(document).ready(function () {
   $(".slider-wrap").slick({
     arrows: false,
@@ -21,5 +30,15 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
     slidesToShow: 4,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 460,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
