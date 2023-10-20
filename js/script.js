@@ -15,3 +15,11 @@ $(document).ready(function () {
     dots: true,
   });
 });
+
+$(document).ready(function () {
+  $(".achiv-slider-wrap").slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 4,
+  });
+});

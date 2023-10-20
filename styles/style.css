@@ -70,7 +70,6 @@ body {
 
 .logo-name {
   display: flex;
-  flex-direction: column;
   gap: 6.5px;
 }
 
@@ -691,6 +690,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1.2;
 }
 
 .services-cards {
@@ -728,6 +728,8 @@ body {
 
 .trust {
   margin-top: 106px;
+  margin-bottom: 60px;
+  background: #fff;
 }
 
 .trust-title {
@@ -756,8 +758,6 @@ body {
 .publications {
   padding-top: 30px;
   background: #f5f5fa;
-  padding-bottom: 30px;
-  border-bottom: 2px solid #e6e6f0;
 }
 
 .publication-cards {
@@ -765,6 +765,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e6e6f0;
 }
 
 .public-card-img {
@@ -775,15 +777,15 @@ body {
   background-color: #fff;
   padding: 30px;
   border-radius: 0 0 8px 8px;
-  min-height: 250px;
+  aspect-ratio: 1/1;
 }
 
 .publication-title {
   color: var(--active-regular, #24a3ff);
   font-size: 16px;
   font-weight: 700;
-  padding-bottom: 8px;
-  line-height: 1.4;
+  padding-bottom: 12px;
+  line-height: 1.2;
 }
 
 .publication-date {
@@ -799,12 +801,13 @@ body {
   font-weight: 400;
   line-height: 1.5;
   border-top: 4px solid #e6e6f0;
-  padding-top: 15px;
-  margin-top: 12px;
+  padding-top: 12px;
+  margin-top: 8px;
 }
 
 .card-comments {
   margin-top: 70px;
+  background-color: #fff;
 }
 
 .slider-wrap {
@@ -866,6 +869,219 @@ body {
   right: 0;
 }
 
+.dark-adaptive .logo-cont {
+  max-width: 302px;
+  width: 100%;
+}
+
+.header-section.serv {
+  margin-top: 60px;
+}
+
+.serv-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 1080px;
+  width: 100%;
+  align-items: center;
+}
+
+.commerce-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  background: var(
+    --gradient-red-text,
+    linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.commerce-descr {
+  color: var(--basic-white, #fff);
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.cons {
+  max-width: 208px;
+  width: 100%;
+}
+
+.serv-publ {
+  border-radius: 12px 12px 0px 0px;
+  background: var(--grey-bg, #f5f5fa);
+  margin-top: 60px;
+}
+
+.serv-list {
+  display: flex;
+  gap: 60px;
+}
+
+.serv-list-title {
+  color: var(--basic-white, #fff);
+  font-size: 22px;
+  font-weight: 700;
+  text-align: start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.serv-list1,
+.serv-list2 {
+  color: var(--basic-white, #fff);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 650px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.serv-li {
+  display: flex;
+}
+
+.serv-li::before {
+  content: "•";
+  width: 8px;
+  color: #f0145a;
+  padding-right: 8px;
+}
+
+.serv-area {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-top: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.exp-sect {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.exp-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.exp-text {
+  max-width: 662px;
+  width: 100%;
+}
+
+.exp-descr {
+  color: var(--basic-black, #000);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 28px;
+}
+
+.exp-cards {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #e6e6f0;
+  padding-left: 30px;
+  margin-left: 30px;
+  gap: 40px;
+  max-width: 332px;
+  width: 100%;
+}
+
+.exp-card-title {
+  font-size: 36px;
+  font-weight: 700;
+  padding-left: 2px;
+  padding-bottom: 10px;
+  background: var(
+    --gradient-red-text,
+    linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-photo-section {
+  background-image: url(../images/Team-sect.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: none;
+}
+
+.team-photo-title {
+  color: var(--basic-white, #fff);
+  text-align: center;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  font-size: 96px;
+  font-weight: 700;
+  letter-spacing: 63px;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 163px;
+  padding-bottom: 158px;
+}
+
+.quality-cont {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.quality-cont .exp-descr {
+  max-width: 658px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.quality-cont .section-title {
+  max-width: 362px;
+  width: 100%;
+}
+
+.achievments-sect {
+  background-color: #f5f5fa;
+}
+
+.achiv-title {
+  color: var(--main-regular, #323264);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.achiv-slide {
+  text-align: center;
+  border-radius: 12px;
+  background: var(--basic-white, #fff);
+  max-width: 195px;
+  width: 100%;
+}
+
+.achiv-cont {
+  padding-bottom: 76px;
+  border-bottom: 2px solid #e6e6f0;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -902,6 +1118,43 @@ body {
 
   .public-card-img {
     width: 513px;
+    aspect-ratio: 5/2;
+  }
+
+  .publ-card-text {
+    aspect-ratio: 2/1;
+  }
+
+  .card-comments {
+    max-width: 1600px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .slider-wrap {
+    max-width: 1600px;
+    width: 100%;
+  }
+
+  .slider-card-descr {
+    min-width: 1140px;
+    width: 100%;
+  }
+
+  .slider-card-img {
+    aspect-ratio: 4/3;
+  }
+
+  .trust-cont {
+    max-width: 1720px;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .serv-cont {
+    max-width: 1360px;
+    width: 100%;
   }
 }
 
@@ -935,6 +1188,40 @@ body {
 
   .public-card-img {
     width: 513px;
+    aspect-ratio: 5/2;
+  }
+
+  .publ-card-text {
+    aspect-ratio: 2/1;
+  }
+
+  .card-comments {
+    max-width: 1600px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .slider-card-descr {
+    max-width: 1140px;
+    width: 100%;
+  }
+
+  .slider-card-img {
+    aspect-ratio: 4/3;
+  }
+
+  .trust-cont {
+    max-width: 1720px;
+    width: 100%;
+    border-radius: 12px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .serv-cont {
+    max-width: 1360px;
+    width: 100%;
   }
 }
 
@@ -960,13 +1247,18 @@ body {
   }
 
   .publ-card-text {
-    height: 250px;
-    padding-bottom: 30px;
+    aspect-ratio: 3/2;
   }
 
   .card-comment {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .slider-wrap {
     max-width: 1320px;
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .trust-cont {
@@ -977,6 +1269,14 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
+
+  .trust {
+    margin-bottom: 0;
+  }
+
+  .public-card-img {
+    aspect-ratio: 2/1;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -984,6 +1284,34 @@ body {
     max-width: 904px;
     width: 100%;
     justify-content: center;
+  }
+
+  .publ-card-text {
+    aspect-ratio: 5/4;
+  }
+
+  .public-card-img {
+    aspect-ratio: 3/2;
+  }
+
+  .publications {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .services {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .serv-area {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .commerce-descr {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -1025,12 +1353,17 @@ body {
     width: 100%;
   }
 
-  .publ-card-text {
-    height: 356px;
+  .public-card-img {
+    aspect-ratio: 3/2;
   }
 
-  .public-card-img {
-    aspect-ratio: 5/4;
+  .publ-card-text {
+    aspect-ratio: 3/4;
+  }
+
+  .card-comment {
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -1054,6 +1387,45 @@ body {
   .sect-cont {
     padding-right: 60px;
     padding-left: 60px;
+  }
+
+  .publ-card-text {
+    aspect-ratio: 3/4;
+  }
+
+  .wrapper {
+    max-width: 930px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .benefits-cont {
+    max-width: 930px;
+    width: 100%;
+  }
+
+  .benefit-link {
+    font-size: 36px;
+  }
+
+  .benefits-list {
+    justify-content: center;
+  }
+
+  .serv-cont {
+    max-width: 930px;
+    width: 100%;
+  }
+
+  .services {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .trust-cont {
+    max-width: 930px;
+    width: 100%;
   }
 }
 
@@ -1135,8 +1507,8 @@ body {
   }
 
   .services {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
     max-width: 790px;
     width: 100%;
   }
@@ -1148,20 +1520,13 @@ body {
     gap: 30px;
   }
 
-  .card-comments {
-    max-width: 790px;
-    width: 100%;
-  }
-
   .card-comment {
     flex-direction: column;
-    max-width: 436px;
+    max-width: 730px;
     width: 100%;
   }
 
   .slider-card-descr {
-    /* max-width: 236px;
-    width: 100%; */
     padding: 30px;
   }
 
@@ -1171,8 +1536,10 @@ body {
   }
 
   .slider-wrap {
-    margin-right: 60px;
-    margin-left: 60px;
+    max-width: 730px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .slider-card-img {
@@ -1201,6 +1568,42 @@ body {
     padding-left: 60px;
   }
 
+  .publication-cards {
+    grid-template-areas:
+      "a b"
+      "c c";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item1 {
+    grid-area: a;
+  }
+
+  .item2 {
+    grid-area: b;
+  }
+
+  .item3 {
+    grid-area: c;
+  }
+
+  .item1 .publ-card-text {
+    aspect-ratio: 1/1;
+  }
+
+  .item2 .publ-card-text {
+    aspect-ratio: 1/1;
+  }
+
+  .item3 .publ-card-text {
+    aspect-ratio: 4/1;
+  }
+
+  .item3 .public-card-img {
+    aspect-ratio: 3/1;
+    width: 100%;
+  }
+
   .section-title {
     font-size: 30px;
     font-weight: 700;
@@ -1210,8 +1613,8 @@ body {
     max-width: 648px;
     width: 100%;
     flex-direction: column;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
   }
 
   .benefits-list {
@@ -1220,7 +1623,6 @@ body {
     justify-content: flex-start;
     overflow-x: auto;
     max-width: calc(100vw - 1rem * 2) !important;
-    /* max-width: 100%; */
   }
 
   .benefit-link {
@@ -1243,8 +1645,10 @@ body {
   }
 
   .slider-wrap {
-    max-width: 790px;
     width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: calc(100vw - 1rem * 2);
   }
 
   .trust-cont {
@@ -1262,13 +1666,42 @@ body {
     width: 648px;
   }
 
+  .slider-card-descr {
+    margin: 0;
+    padding: 30px;
+  }
+
   .card-comment {
     max-width: 648px;
     width: 100%;
   }
 
+  .card-comments {
+    max-width: 730px;
+    width: 100%;
+  }
+
   .slick-dots {
-    right: 55px;
+    right: 0;
+  }
+
+  .serv-cont {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+  .cons {
+    width: 208px;
+    margin-top: 0;
+  }
+
+  .img-wrap {
+    background-size: 100vh;
+  }
+
+  .wrapper {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -1293,6 +1726,61 @@ body {
     margin-right: auto;
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .slick-dots {
+    right: 0;
+  }
+
+  .benefits-cont {
+    max-width: 660px;
+    width: 100%;
+  }
+
+  .serv-list-title {
+    padding-bottom: 0;
+  }
+
+  .item1 .publ-card-text {
+    aspect-ratio: 1/1;
+  }
+
+  .item2 .publ-card-text {
+    aspect-ratio: 1/1;
+  }
+
+  .card-comments {
+    max-width: 648px;
+    width: 100%;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+  .card-comment {
+    flex-direction: column;
+    max-width: 648px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .slider-card-descr {
+    padding: 30px;
+  }
+
+  .slider-card-descr .section-title {
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  .slider-wrap {
+    max-width: 648px;
+    width: 100%;
+  }
+
+  .slider-card-img {
+    border-radius: 8px 8px 0 0;
+    aspect-ratio: 5/4;
+    width: 648px;
   }
 }
 
@@ -1422,6 +1910,10 @@ body {
     padding-bottom: 0;
   }
 
+  .dark-nl {
+    color: #24a3ff;
+  }
+
   .close {
     display: block;
     margin-left: auto;
@@ -1504,7 +1996,7 @@ body {
 
   .dark-nav {
     background: rgba(245, 245, 250, 0.2);
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
   }
 
@@ -1513,19 +2005,25 @@ body {
   }
 
   .wrapper {
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .header-text {
-    padding-top: 269px;
-    padding-bottom: 489px;
+    max-width: 315px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 129px;
+    padding-bottom: 231px;
   }
 
   .services {
     padding-right: 60px;
     padding-left: 60px;
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
   }
 
@@ -1537,19 +2035,17 @@ body {
   }
 
   .card-comments {
-    max-width: 790px;
+    max-width: 472px;
     width: 100%;
+    margin-right: 60px;
+    margin-left: 60px;
   }
 
   .card-comment {
     flex-direction: column;
-    max-width: 436px;
-    width: 100%;
   }
 
   .slider-card-descr {
-    /* max-width: 236px;
-    width: 100%; */
     padding: 30px;
   }
 
@@ -1559,8 +2055,8 @@ body {
   }
 
   .slider-wrap {
-    margin-right: 60px;
-    margin-left: 60px;
+    max-width: 472px;
+    width: 100%;
   }
 
   .slider-card-img {
@@ -1571,22 +2067,58 @@ body {
   .logo-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
   }
 
   .trust-cont {
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
     margin-right: 0;
     margin-left: 0;
   }
 
   .publications {
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
     padding-right: 60px;
     padding-left: 60px;
+  }
+
+  .publication-cards {
+    grid-template-areas:
+      "a b"
+      "c c";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item1 {
+    grid-area: a;
+  }
+
+  .item2 {
+    grid-area: b;
+  }
+
+  .item3 {
+    grid-area: c;
+  }
+
+  .item1 .publ-card-text {
+    aspect-ratio: 1/2;
+  }
+
+  .item2 .publ-card-text {
+    aspect-ratio: 1/2;
+  }
+
+  .item3 .publ-card-text {
+    aspect-ratio: 4/1;
+  }
+
+  .item3 .public-card-img {
+    aspect-ratio: 3/1;
+    width: 100%;
   }
 
   .section-title {
@@ -1595,7 +2127,7 @@ body {
   }
 
   .benefits-cont {
-    max-width: 648px;
+    max-width: 432px;
     width: 100%;
     flex-direction: column;
     margin-right: 60px;
@@ -1608,7 +2140,6 @@ body {
     justify-content: flex-start;
     overflow-x: auto;
     max-width: calc(100vw - 1rem * 2) !important;
-    /* max-width: 100%; */
   }
 
   .benefit-link {
@@ -1626,37 +2157,75 @@ body {
   }
 
   .wrapper {
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
   }
 
   .slider-wrap {
-    max-width: 790px;
+    max-width: 472px;
     width: 100%;
   }
 
   .trust-cont {
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
   }
 
   .publ-cont {
-    max-width: 790px;
+    max-width: 592px;
     width: 100%;
   }
 
   .slider-card-img {
     aspect-ratio: 5/4;
-    width: 648px;
+    width: 592px;
   }
 
   .card-comment {
-    max-width: 648px;
+    max-width: 472px;
     width: 100%;
+    margin-left: 0;
   }
 
   .slick-dots {
-    right: 55px;
+    right: 0;
+  }
+
+  .img-wrap {
+    background-size: auto;
+  }
+
+  .serv-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .serv-li {
+    display: flex;
+  }
+
+  .serv-li + .serv-li {
+    padding-top: 15px;
+  }
+
+  .serv-li:first-child {
+    padding-top: 0;
+  }
+
+  .serv-list-title {
+    display: flex;
+    padding-bottom: 30px;
+  }
+
+  .serv-area {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .serv-cont {
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -1805,7 +2374,7 @@ body {
     background: #f5f5fa;
   }
   .header-contacts {
-    max-width: 375px;
+    max-width: 460px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -1900,9 +2469,11 @@ body {
     gap: 30px;
   }
 
-  .card-comments {
+  .slider-wrap {
     max-width: 460px;
     width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
   }
 
   .card-comment {
@@ -1911,19 +2482,18 @@ body {
     width: 100%;
   }
 
+  .card-comments {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   .slider-card-descr {
-    max-width: 255px;
-    width: 100%;
+    margin: 0;
   }
 
   .slider-card-descr .section-title {
     font-size: 30px;
     font-weight: 700;
-  }
-
-  .slider-wrap {
-    margin-right: 30px;
-    margin-left: 30px;
   }
 
   .slider-card-img {
@@ -1967,7 +2537,12 @@ body {
     width: 100%;
   }
 
-  .dark-nav .header-nav {
+  .dark-nav {
+    max-width: 460px;
+    width: 100%;
+  }
+
+  .dark-adaptive {
     max-width: 460px;
     width: 100%;
   }
@@ -1986,6 +2561,11 @@ body {
     width: 100%;
   }
 
+  .benefits-list {
+    max-width: 460px;
+    width: 100%;
+  }
+
   .slider-wrap {
     max-width: 400px;
     width: 100%;
@@ -1994,9 +2574,28 @@ body {
   .slick-dots {
     right: 0;
   }
+  .slider-card-descr {
+    margin: 0;
+  }
+
+  .item1 .publ-card-text {
+    aspect-ratio: 2/1;
+  }
+
+  .item2 .publ-card-text {
+    aspect-ratio: 2/1;
+  }
+
+  .item3 .publ-card-text {
+    aspect-ratio: 2/1;
+  }
+
+  .item3 .public-card-img {
+    aspect-ratio: 3/2;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .team-sect {
     margin-top: 30px;
   }
@@ -2076,6 +2675,11 @@ body {
 
   .header-nav.active .menu {
     transform: translateY(0);
+  }
+
+  .dark-nav .header-nav {
+    max-width: 375px;
+    width: 100%;
   }
 
   .menu {
@@ -2236,19 +2840,14 @@ body {
     gap: 30px;
   }
 
-  .card-comments {
-    max-width: 375px;
-    width: 100%;
-  }
-
   .card-comment {
     flex-direction: column;
     max-width: 315px;
     width: 100%;
   }
 
-  .slider-card-descr {
-    max-width: 255px;
+  .card-comments {
+    max-width: 375px;
     width: 100%;
   }
 
@@ -2258,12 +2857,20 @@ body {
   }
 
   .slider-wrap {
+    max-width: 315px;
+    width: 100%;
     margin-right: 30px;
     margin-left: 30px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .slider-card-img {
     border-radius: 8px 8px 0 0;
+    aspect-ratio: 2/3;
+  }
+
+  .slider-card-descr {
     aspect-ratio: 2/3;
   }
 
@@ -2293,6 +2900,24 @@ body {
     flex-direction: column;
   }
 
+  .item1 .publ-card-text {
+    aspect-ratio: 3/2;
+  }
+
+  .item2 .publ-card-text {
+    aspect-ratio: 1/1;
+  }
+
+  .item3 .publ-card-text {
+    aspect-ratio: 3/2;
+  }
+
+  .item1,
+  .item2,
+  .item3 .public-card-img {
+    aspect-ratio: 3/2;
+  }
+
   .section-title {
     font-size: 30px;
     font-weight: 700;
@@ -2302,6 +2927,28 @@ body {
     max-width: 375px;
     width: 100%;
   }
+
+  .benefits-list {
+    max-width: calc(100vw - 1rem * 2) !important;
+  }
+
+  .slick-dots {
+    right: 0;
+  }
+
+  /* .nav-link.dark-header:hover {
+    transition: all 0.1s linear;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid #24a3ff;
+  }
+
+  .nav-link.dark-header:active {
+    color: #f0145a;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 2px solid #f0145a;
+  } */
 }
 
 @media (max-width: 335px) {
