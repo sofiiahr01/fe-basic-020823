@@ -1236,6 +1236,14 @@ body {
   font-size: 38px;
 }
 
+.slick-dots li button:hover {
+  opacity: 0.6;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -1756,8 +1764,8 @@ body {
   }
 
   .card-comment {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .team-photo-title {
@@ -1987,8 +1995,6 @@ body {
   }
 
   .slider-wrap {
-    max-width: 730px;
-    width: 100%;
     padding-right: 0;
     padding-left: 0;
   }
@@ -2620,11 +2626,6 @@ body {
     font-weight: 700;
   }
 
-  .slider-wrap {
-    max-width: 472px;
-    width: 100%;
-  }
-
   .slider-card-img {
     border-radius: 8px 8px 0 0;
     aspect-ratio: 3/2;
@@ -3094,8 +3095,8 @@ body {
   .slider-wrap {
     max-width: 460px;
     width: 100%;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .card-comment {
@@ -3623,5 +3624,10 @@ body {
 
   .window-close {
     left: 87%;
+  }
+
+  .slider-wrap {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
