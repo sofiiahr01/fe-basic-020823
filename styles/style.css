@@ -1693,11 +1693,6 @@ body {
     padding-left: 30px;
   }
 
-  .commerce-descr {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
   .achiv-slider-wrap {
     padding-left: 10px;
   }
@@ -2825,8 +2820,31 @@ body {
     padding-left: 20px;
   }
 
-  .popup-window .form .title {
-    font-size: 30px;
+  .popup-window.form-cont.active {
+    padding: 30px;
+    max-width: 375px;
+    width: 100%;
+  }
+
+  .popup-window .input.email {
+    margin-top: 15px;
+  }
+
+  .popup-window .input.message {
+    margin-top: 15px;
+  }
+
+  .popup-window .form .input.name {
+    margin-top: 15px;
+  }
+
+  .popup-window .form .sub-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .popup-window .input.message {
+    min-height: 130px;
   }
 
   .window-close {
@@ -3604,6 +3622,6 @@ body {
   }
 
   .window-close {
-    left: 80%;
+    left: 87%;
   }
 }
