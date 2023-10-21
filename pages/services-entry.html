@@ -129,25 +129,27 @@
                   </svg>
                 </li>
                 <li class="menu-link">
-                  <a href="./about.html" class="nav-link dark-header dark-nl"
+                  <a href="./about.html" class="naav-link dark-header dark-nl"
                     >about us</a
                   >
                 </li>
                 <li class="menu-link">
-                  <a href="#" class="nav-link dark-header dark-nl">services</a>
+                  <a href="#" class="naav-link dark-header dark-nl">services</a>
                 </li>
                 <li class="menu-link">
-                  <a href="./index.html" class="nav-link dark-header dark-nl"
+                  <a href="./index.html" class="naav-link dark-header dark-nl"
                     >team</a
                   >
                 </li>
                 <li class="menu-link">
-                  <a href="#" class="nav-link dark-header dark-nl"
+                  <a href="#" class="naav-link dark-header dark-nl"
                     >publications</a
                   >
                 </li>
                 <li class="menu-link">
-                  <a href="./contacts.html" class="nav-link dark-header dark-nl"
+                  <a
+                    href="./contacts.html"
+                    class="naav-link dark-header dark-nl"
                     >contact</a
                   >
                 </li>
@@ -219,7 +221,13 @@
               how difficult it is to find a good candidate with experience in
               the field of information technology in Ukraine.
             </p>
-            <div class="form-btn cons">Free consultation</div>
+            <button
+              type="button"
+              data-target="#myWindow"
+              class="form-btn popupBtn cons"
+            >
+              Free consultation
+            </button>
             <div class="serv-area">
               <h3 class="serv-list-title">Services in this area:</h3>
               <div class="serv-list">
@@ -404,6 +412,58 @@
         <div class="copyright">© 2021 HLEGAL Law company, LLC</div>
       </div>
     </footer>
+
+    <div class="popup-wrapper">
+      <div id="myWindow" class="popup-window form-cont">
+        <span class="window-close">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+          </svg>
+        </span>
+        <form action="https://fom.in.ua/echo" method="post" class="form">
+          <h1 class="title">We would like to help you</h1>
+          <input
+            type="text"
+            name="Name"
+            class="input name"
+            placeholder="Name"
+            required
+            title="Enter your name"
+          />
+          <textarea
+            name="Message"
+            id="message"
+            placeholder="Message"
+            rows="4"
+            class="input message"
+          ></textarea>
+          <h2 class="sub-title">How to answer you?</h2>
+          <input
+            type="number"
+            name="phone"
+            class="input phone"
+            placeholder="Phone number"
+            title="Enter your phone"
+          />
+          <input
+            type="email"
+            name="email"
+            class="input email"
+            placeholder="E-mail"
+            required
+            title="Enter your E-mail"
+          />
+          <button type="submit" class="form-btn">Send message</button>
+        </form>
+      </div>
+    </div>
     <script src="../assets/jquery/code.jquery.com_jquery-3.7.1.js"></script>
     <script src="../assets/slick/slick.min.js"></script>
     <script src="../js/script.js"></script>
